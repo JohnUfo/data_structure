@@ -14,7 +14,7 @@ public class MoshApplication {
         list.addLast(10);
         list.addLast(20);
         list.addLast(30);
-        list.removeLast();
+        list.reverse();
         System.out.println(Arrays.toString(list.toArray()));
     }
 
