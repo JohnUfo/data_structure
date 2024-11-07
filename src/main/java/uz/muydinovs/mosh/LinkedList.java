@@ -111,6 +111,23 @@ public class LinkedList {
         first = previous;
     }
 
+    public int getKthFromTheEnd(int k) {
+        if (isEmpty()) throw new IllegalStateException();
+        var a = first;
+        var b = first;
+        for (int i = 0; i < k - 1; i++) {
+            b = b.next;
+            if (b == null) {
+                throw new IllegalArgumentException();
+            }
+        }
+        while (b != last) {
+            a = a.next;
+            b = b.next;
+        }
+        return a.value;
+    }
+
     private Node getPrevious(Node node) {
         var current = first;
         while (current != null) {
