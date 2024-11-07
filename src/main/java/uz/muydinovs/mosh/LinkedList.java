@@ -156,3 +156,14 @@ public class LinkedList {
     }
 
 }
+
+// lookUp byIndex = O(n)
+//        byValue = O(n)
+
+// Insert Beginning/End O(n)
+//        Middle O(n)
+
+// Delete Beginning 0(1)
+//        Middle 0(n)
+//        End Singly LinkedList 0(n)
+//        End Doubly LinkedList 0(1)
