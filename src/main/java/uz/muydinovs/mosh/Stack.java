@@ -36,5 +36,5 @@ public class Stack {
 
 }
 
-
 //LIFO
+//All operation run in 0(1)
